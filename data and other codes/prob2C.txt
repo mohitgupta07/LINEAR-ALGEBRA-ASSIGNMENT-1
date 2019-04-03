@@ -1,0 +1,28 @@
+problem 2-third
+So instead of row operation we have to use column operations.
+We can simply imply that column operation on A == row operation on A^T.
+now, let's say if A' exists for A. Then we have to prove that (A^T)' exists for A^T.
+Since we know that transpose and inverse are interchangable so (A^T)'==(A')^T.
+Now if A' exists so (A^T)' will also exist.
+This also proves that if we perform only column operations then too we can get inverse of A.
+
+
+Bonus:-
+
+Take Switch and mulADD.
+
+where we convert the pivot element to 1 by using mul. we can simply do by muladd.
+We want to convert x into 1:-
+1=x+ a.x 
+a= (1-x)/x
+
+The other way to solve is to use mulADD and scale only.
+With these two operations we can perform all the three operartions.
+consider two rows r1 and r2 , along with two operations mulADD and scale we need to prove that we can perform the switch instruction.
+perform these operations on the chosen rows:
+	r1=r1+r2;
+	r2=r1-r2; 
+	r1=r1-r2;
+After performing these operations we can clearly visualize that the values in the rows gets interchanged , hence switch operation is performed.
+
+

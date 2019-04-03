@@ -1,0 +1,3 @@
+MORE THAN ONE!
+48.0 1.0 51.0
+free Variables={ X[2],} Equations={X[0]=150.0-2.0*X[2] ; X[1]=-50.0--1.0*X[2]}
